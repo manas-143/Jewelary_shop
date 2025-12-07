@@ -1,0 +1,23 @@
+This document contains a clear, practical, step-by-step guide to build a small React front-end for a jewelry shop with the following pages:
+
+Landing (Home)
+
+Add Product
+
+Inventory
+
+Billing (POS)
+
+Stack: React (Vite), React Router, Tailwind CSS, localStorage for demo persistence.
+
+
+src/
+ ├── components/
+ │     ├── Navbar.jsx
+ ├── pages/
+ │     ├── Landing.jsx
+ │     ├── AddProduct.jsx
+ │     ├── Inventory.jsx
+ │     ├── Billing.jsx
+ ├── App.js
+ ├── index.js
