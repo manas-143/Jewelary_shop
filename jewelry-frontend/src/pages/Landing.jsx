@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Landing.css";
 import { getProducts } from "../services/addProduct";
 
@@ -20,10 +20,6 @@ function Landing() {
   useEffect(() => {
     onFetchProducts();
   }, []);
-
-  useEffect(() => {
-    console.log(products, "------- products on landing page");
-  }, [products]);
 
   return (
     <div className="landing">
