@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./AddProduct.css";
+import { addProduct } from "../services/addProduct";
 
 function AddProduct() {
   const [form, setForm] = useState({
     name: "",
     category: "",
     gram: "",
-    crat: "",
+    carat: "",
     price: "",
   });
 
@@ -15,10 +16,13 @@ function AddProduct() {
   };
 
   const saveProduct = () => {
-    const products = JSON.parse(localStorage.getItem("products") || "[]");
-    products.push({ ...form, id: Date.now() });
-    localStorage.setItem("products", JSON.stringify(products));
-    alert("Product Added!");
+    // const products = JSON.parse(localStorage.getItem("products") || "[]");
+    // products.push({ ...form, id: Date.now() });
+    console.log(form, "--------- found form");
+    addProduct(form);
+    // addProduct(products)
+    // localStorage.setItem("products", JSON.stringify(products));
+    // alert("Product Added!");
   };
 
   return (
@@ -27,11 +31,7 @@ function AddProduct() {
         <h2>Add Product</h2>
 
         {/* DROPDOWN CATEGORY */}
-        <select
-          name="category"
-          onChange={handleChange}
-          className="dropdown"
-        >
+        <select name="category" onChange={handleChange} className="dropdown">
           <option value="">Select Category</option>
           <option value="Ladies Ring">Ladies Ring</option>
           <option value="Gents Ring">Gents Ring</option>
@@ -44,23 +44,15 @@ function AddProduct() {
           <option value="Chika Hara">Chika Hara</option>
         </select>
 
-        <input 
-          name="gram" 
-          placeholder="GRAM (Weight)" 
-          onChange={handleChange} 
+        <input
+          name="gram"
+          placeholder="GRAM (Weight)"
+          onChange={handleChange}
         />
 
-        <input 
-          name="crat" 
-          placeholder="CRAT" 
-          onChange={handleChange} 
-        />
+        <input name="carat" placeholder="CRAT" onChange={handleChange} />
 
-        <input 
-          name="price" 
-          placeholder="PRICE" 
-          onChange={handleChange} 
-        />
+        <input name="price" placeholder="PRICE" onChange={handleChange} />
 
         <button onClick={saveProduct} className="btn">
           Save
