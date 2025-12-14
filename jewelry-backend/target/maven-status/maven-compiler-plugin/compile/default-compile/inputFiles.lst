@@ -1,0 +1,7 @@
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/JewelleryApplication.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/config/CORSConfig.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/controller/ProductController.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/model/JewelleryProduct.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/service/ProductService.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/util/BarcodeGenerator.java
+/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/main/java/com/example/jewellery/util/QRCodeGenerator.java

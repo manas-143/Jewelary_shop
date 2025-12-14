@@ -1,25 +1,9 @@
 [ {
   "id" : 1,
-  "name" : "Gold Necklace",
-  "category" : "Jewellery",
-  "gram" : 22.5,
-  "carat" : 22,
-  "price" : 145000.5,
+  "name" : "",
+  "category" : "",
+  "gram" : 0.0,
+  "carat" : 0,
+  "price" : 150006.0,
   "barcodeImagePath" : "src/main/resources/barcodes/product_1.png"
-}, {
-  "id" : 2,
-  "name" : "Gold Bracelet",
-  "category" : "Jewellery",
-  "gram" : 13.5,
-  "carat" : 22,
-  "price" : 100000.5,
-  "barcodeImagePath" : "src/main/resources/barcodes/product_2.png"
-}, {
-  "id" : 3,
-  "name" : "Palmonas Bracelet",
-  "category" : "Jewellery",
-  "gram" : 8.0,
-  "carat" : 22,
-  "price" : 80000.5,
-  "barcodeImagePath" : "src/main/resources/barcodes/product_3.png"
 } ]

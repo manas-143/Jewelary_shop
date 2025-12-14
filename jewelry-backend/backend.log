@@ -1,0 +1,363 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/Users/manas/.m2/wrapper/dists/apache-maven-3.9.11/a2d47e15/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:jewellery >------------------------
+[INFO] Building jewellery 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ jewellery >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jewellery ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ jewellery ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ jewellery ---
+[INFO] skip non existing resourceDirectory /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ jewellery ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ jewellery <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ jewellery ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-13T23:45:38.662+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-13T23:45:38.663+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T23:45:38.682+05:30  INFO 17648 --- [jewellery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-13T23:45:38.682+05:30  INFO 17648 --- [jewellery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/manas/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-12-13T23:45:38.994+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-13T23:45:39.000+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T23:45:39.001+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-13T23:45:39.013+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-13T23:45:39.014+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 331 ms
+2025-12-13T23:45:39.114+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-13T23:45:39.133+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-13T23:45:39.147+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T23:45:39.151+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.615 seconds (process running for 0.751)
+2025-12-13T23:47:17.280+05:30  INFO 17648 --- [jewellery] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T23:47:17.280+05:30  INFO 17648 --- [jewellery] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T23:47:17.281+05:30  INFO 17648 --- [jewellery] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-14T00:07:41.903+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-12-14T00:07:43.519+05:30  WARN 17648 --- [jewellery] [       Thread-5] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:07:43.572+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:07:43.573+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:07:43.648+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:07:43.649+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:07:43.649+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:07:43.652+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:07:43.653+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 79 ms
+2025-12-14T00:07:43.682+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:07:43.686+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:07:43.689+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:07:43.690+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.13 seconds (process running for 1325.312)
+2025-12-14T00:07:43.691+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:07:52.155+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 1 deletion, 12 modifications)
+2025-12-14T00:07:53.761+05:30  WARN 17648 --- [jewellery] [       Thread-7] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:07:53.808+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:07:53.808+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:07:53.861+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:07:53.861+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:07:53.862+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:07:53.865+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:07:53.865+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 56 ms
+2025-12-14T00:07:53.883+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:07:53.886+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:07:53.889+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:07:53.890+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.091 seconds (process running for 1335.512)
+2025-12-14T00:07:53.891+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:08:15.453+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-12-14T00:08:17.058+05:30  WARN 17648 --- [jewellery] [      Thread-11] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:08:17.103+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:08:17.103+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:08:17.157+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:08:17.157+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:08:17.157+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:08:17.161+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:08:17.161+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 57 ms
+2025-12-14T00:08:17.179+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:08:17.182+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:08:17.184+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:08:17.186+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.091 seconds (process running for 1358.808)
+2025-12-14T00:08:17.186+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:08:30.690+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-14T00:08:32.298+05:30  WARN 17648 --- [jewellery] [      Thread-15] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:08:32.332+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:08:32.332+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:08:32.380+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:08:32.380+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:08:32.380+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:08:32.384+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:08:32.384+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 51 ms
+2025-12-14T00:08:32.401+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:08:32.403+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:08:32.406+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:08:32.407+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.083 seconds (process running for 1374.03)
+2025-12-14T00:08:32.408+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:08:33.815+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-14T00:08:35.425+05:30  WARN 17648 --- [jewellery] [      Thread-19] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:08:35.469+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:08:35.470+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:08:35.520+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:08:35.520+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:08:35.520+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:08:35.524+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:08:35.524+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 54 ms
+2025-12-14T00:08:35.540+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:08:35.543+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:08:35.545+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:08:35.546+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.085 seconds (process running for 1377.169)
+2025-12-14T00:08:35.547+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:08:39.978+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-14T00:08:41.587+05:30  WARN 17648 --- [jewellery] [      Thread-23] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:08:41.627+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:08:41.627+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:08:41.676+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:08:41.676+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:08:41.677+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:08:41.679+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:08:41.679+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 51 ms
+2025-12-14T00:08:41.695+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:08:41.698+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:08:41.700+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:08:41.701+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.082 seconds (process running for 1383.324)
+2025-12-14T00:08:41.702+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:09:01.258+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2025-12-14T00:09:02.866+05:30  WARN 17648 --- [jewellery] [      Thread-27] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:09:02.904+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:09:02.904+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:09:02.956+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:09:02.957+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:09:02.957+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:09:02.959+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:09:02.959+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 54 ms
+2025-12-14T00:09:02.976+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:09:02.978+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:09:02.981+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:09:02.982+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.086 seconds (process running for 1404.605)
+2025-12-14T00:09:02.982+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:09:09.440+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-12-14T00:09:11.048+05:30  WARN 17648 --- [jewellery] [      Thread-31] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:09:11.085+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:09:11.085+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:09:11.135+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:09:11.136+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:09:11.136+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:09:11.138+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:09:11.138+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 52 ms
+2025-12-14T00:09:11.156+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:09:11.158+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:09:11.161+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:09:11.162+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.085 seconds (process running for 1412.785)
+2025-12-14T00:09:11.163+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:10:41.311+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-12-14T00:10:42.919+05:30  WARN 17648 --- [jewellery] [      Thread-35] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:10:42.960+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:10:42.960+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:10:43.009+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:10:43.009+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:10:43.009+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:10:43.011+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:10:43.011+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 50 ms
+2025-12-14T00:10:43.028+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:10:43.031+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:10:43.033+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:10:43.035+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.083 seconds (process running for 1504.658)
+2025-12-14T00:10:43.035+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:13:10.841+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-12-14T00:13:12.450+05:30  WARN 17648 --- [jewellery] [      Thread-39] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:13:12.494+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:13:12.494+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:13:12.547+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:13:12.548+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:13:12.548+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:13:12.550+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:13:12.550+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 55 ms
+2025-12-14T00:13:12.571+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:13:12.574+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:13:12.577+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:13:12.578+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.092 seconds (process running for 1654.204)
+2025-12-14T00:13:12.578+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:13:20.044+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-12-14T00:13:21.652+05:30  WARN 17648 --- [jewellery] [      Thread-43] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:13:21.699+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:13:21.699+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:13:21.746+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:13:21.746+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:13:21.746+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:13:21.748+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:13:21.748+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 49 ms
+2025-12-14T00:13:21.765+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:13:21.767+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:13:21.770+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:13:21.771+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.08 seconds (process running for 1663.397)
+2025-12-14T00:13:21.771+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-14T00:19:41.776+05:30  INFO 17648 --- [jewellery] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-12-14T00:19:43.385+05:30  WARN 17648 --- [jewellery] [      Thread-47] org.apache.tomcat.util.net.Acceptor      : The acceptor thread [http-nio-8080-Acceptor] did not stop cleanly
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-12-14T00:19:43.409+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Starting JewelleryApplication using Java 25.0.1 with PID 17648 (/Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend/target/classes started by manas in /Users/manas/Desktop/balia_dokan/Jewelary_shop/jewelry-backend)
+2025-12-14T00:19:43.409+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-14T00:19:43.452+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-14T00:19:43.452+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-14T00:19:43.452+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-14T00:19:43.455+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-14T00:19:43.455+05:30  INFO 17648 --- [jewellery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2025-12-14T00:19:43.473+05:30  WARN 17648 --- [jewellery] [  restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-12-14T00:19:43.476+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-14T00:19:43.480+05:30  INFO 17648 --- [jewellery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-14T00:19:43.481+05:30  INFO 17648 --- [jewellery] [  restartedMain] c.e.jewellery.JewelleryApplication       : Started JewelleryApplication in 0.077 seconds (process running for 2045.099)
+2025-12-14T00:19:43.481+05:30  INFO 17648 --- [jewellery] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  36:46 min
+[INFO] Finished at: 2025-12-14T00:22:23+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project jewellery: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
