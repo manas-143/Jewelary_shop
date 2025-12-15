@@ -7,6 +7,7 @@ export const addProduct = async (productData) => {
       productData
     );
     console.log("Product added successfully:", res);
+    return res.data;
   } catch (error) {
     console.error("Error adding product:", error);
     throw error;

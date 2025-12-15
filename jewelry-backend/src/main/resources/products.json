@@ -1,9 +1,37 @@
 [ {
   "id" : 1,
-  "name" : "",
-  "category" : "",
-  "gram" : 0.0,
-  "carat" : 0,
-  "price" : 150006.0,
-  "barcodeImagePath" : "src/main/resources/barcodes/product_1.png"
+  "name" : "Manas",
+  "category" : "Ladies Ring",
+  "gram" : 2.5,
+  "carat" : 22,
+  "price" : 150000.0,
+  "barcodeImagePath" : "src/main/resources/barcodes/product_1.png",
+  "createdDate" : "2025-12-14T18:33:00.078492",
+  "inStock" : false,
+  "deletedBy" : "Raghu",
+  "productCode" : "LR-12-0001"
+}, {
+  "id" : 2,
+  "name" : "Manas",
+  "category" : "Ladies Ring",
+  "gram" : 22.5,
+  "carat" : 22,
+  "price" : 150000.0,
+  "barcodeImagePath" : "src/main/resources/barcodes/product_2.png",
+  "createdDate" : "2025-12-14T19:44:10.850892",
+  "inStock" : true,
+  "deletedBy" : null,
+  "productCode" : "LR-12-0002"
+}, {
+  "id" : 3,
+  "name" : "Manas",
+  "category" : "Earring",
+  "gram" : 22.5,
+  "carat" : 22,
+  "price" : 44545.0,
+  "barcodeImagePath" : "src/main/resources/barcodes/product_3.png",
+  "createdDate" : "2025-12-14T22:44:27.161293",
+  "inStock" : true,
+  "deletedBy" : null,
+  "productCode" : "EA-12-0001"
 } ]

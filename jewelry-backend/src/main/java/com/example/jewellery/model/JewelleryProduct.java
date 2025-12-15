@@ -8,6 +8,10 @@ public class JewelleryProduct {
     private int carat;
     private double price;
     private String barcodeImagePath;  // path to saved QR/barcode image
+    private String createdDate; // ISO datetime string when product was created
+    private boolean inStock = true; // whether the product is currently in stock
+    private String deletedBy; // username or identifier who deleted the product (for soft delete)
+    private String productCode; // generated code like CH-12-0001
 
     public JewelleryProduct() {}
 
@@ -31,5 +35,17 @@ public class JewelleryProduct {
 
     public String getBarcodeImagePath() { return barcodeImagePath; }
     public void setBarcodeImagePath(String barcodeImagePath) { this.barcodeImagePath = barcodeImagePath; }
+
+    public String getCreatedDate() { return createdDate; }
+    public void setCreatedDate(String createdDate) { this.createdDate = createdDate; }
+
+    public boolean isInStock() { return inStock; }
+    public void setInStock(boolean inStock) { this.inStock = inStock; }
+
+    public String getDeletedBy() { return deletedBy; }
+    public void setDeletedBy(String deletedBy) { this.deletedBy = deletedBy; }
+
+    public String getProductCode() { return productCode; }
+    public void setProductCode(String productCode) { this.productCode = productCode; }
 
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./AddProduct.css";
 import { addProduct } from "../services/addProduct";
 
@@ -15,14 +16,53 @@ function AddProduct() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const saveProduct = () => {
-    // const products = JSON.parse(localStorage.getItem("products") || "[]");
-    // products.push({ ...form, id: Date.now() });
-    console.log(form, "--------- found form");
-    addProduct(form);
-    // addProduct(products)
-    // localStorage.setItem("products", JSON.stringify(products));
-    // alert("Product Added!");
+  const navigate = useNavigate();
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [formError, setFormError] = useState(null);
+
+  const validate = () => {
+    if (!form.name || form.name.trim() === "") return "Please enter product name";
+    if (!form.category || form.category.trim() === "") return "Please select a category";
+    if (!form.gram || isNaN(Number(form.gram))) return "Please provide a valid weight in grams";
+    if (!form.carat || isNaN(Number(form.carat))) return "Please provide carat";
+    if (!form.price || isNaN(Number(form.price))) return "Please provide price";
+    return null;
+  };
+
+  const onSaveClick = () => {
+    const err = validate();
+    if (err) {
+      setFormError(err);
+      return;
+    }
+    setFormError(null);
+    setShowConfirm(true);
+  };
+
+  const onConfirm = async () => {
+    setSaving(true);
+    try {
+      await addProduct({
+        name: form.name,
+        category: form.category,
+        gram: Number(form.gram),
+        carat: Number(form.carat),
+        price: Number(form.price),
+      });
+      setShowConfirm(false);
+      // go back to previous page (inventory or landing)
+      navigate(-1);
+    } catch (err) {
+      setFormError('Failed to add product: ' + (err.message || 'unknown'));
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const onCancelConfirm = () => {
+    setShowConfirm(false);
+    navigate(-1);
   };
 
   return (
@@ -30,8 +70,16 @@ function AddProduct() {
       <div className="form-box">
         <h2>Add Product</h2>
 
+        {/* PRODUCT NAME */}
+        <input
+          name="name"
+          placeholder="Product Name"
+          value={form.name}
+          onChange={handleChange}
+        />
+
         {/* DROPDOWN CATEGORY */}
-        <select name="category" onChange={handleChange} className="dropdown">
+        <select name="category" value={form.category} onChange={handleChange} className="dropdown">
           <option value="">Select Category</option>
           <option value="Ladies Ring">Ladies Ring</option>
           <option value="Gents Ring">Gents Ring</option>
@@ -46,17 +94,34 @@ function AddProduct() {
 
         <input
           name="gram"
-          placeholder="GRAM (Weight)"
+          placeholder="Weight (grams)"
+          type="number"
+          value={form.gram}
           onChange={handleChange}
         />
 
-        <input name="carat" placeholder="CRAT" onChange={handleChange} />
+        <input name="carat" placeholder="Carat" type="number" value={form.carat} onChange={handleChange} />
 
-        <input name="price" placeholder="PRICE" onChange={handleChange} />
+        <input name="price" placeholder="Price" type="number" value={form.price} onChange={handleChange} />
 
-        <button onClick={saveProduct} className="btn">
-          Save
+        {formError && <div style={{ color: 'red', marginBottom: 8 }}>{formError}</div>}
+
+        <button onClick={onSaveClick} className="btn" disabled={saving}>
+          {saving ? 'Saving...' : 'Save'}
         </button>
+
+        {showConfirm && (
+          <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.35)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ background: 'white', padding: 20, borderRadius: 8, width: 420, maxWidth: '90%' }}>
+              <h3 style={{ marginTop: 0 }}>Confirm Add Product</h3>
+              <p>Are you sure you want to add <strong>{form.name}</strong> to inventory?</p>
+              <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end', marginTop: 12 }}>
+                <button className="btn" style={{ background: '#6c757d' }} onClick={onCancelConfirm} disabled={saving}>Cancel</button>
+                <button className="btn" style={{ background: '#198754' }} onClick={onConfirm} disabled={saving}>{saving ? 'Saving...' : 'Confirm'}</button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

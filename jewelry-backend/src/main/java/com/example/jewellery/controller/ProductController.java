@@ -31,8 +31,14 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<JewelleryProduct> getProducts() {
-        return service.getAllProducts();
+    public List<JewelleryProduct> getProducts(@org.springframework.web.bind.annotation.RequestParam(required = false) String category,
+                                               @org.springframework.web.bind.annotation.RequestParam(required = false) String createdDate,
+                                               @org.springframework.web.bind.annotation.RequestParam(required = false) Boolean includeDeleted,
+                                               @org.springframework.web.bind.annotation.RequestParam(required = false) Boolean onlyDeleted) {
+        // createdDate expected as YYYY-MM-DD (e.g. 2025-12-14)
+        // includeDeleted=true will include soft-deleted items (inStock==false) along with in-stock items
+        // onlyDeleted=true will return only inStock==false items
+        return service.getProducts(category, createdDate, includeDeleted, onlyDeleted);
     }
 
     @PutMapping("/{id}")
@@ -43,8 +49,9 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteProduct(@PathVariable long id) {
-        boolean ok = service.deleteProduct(id);
+    public ResponseEntity<Void> deleteProduct(@PathVariable long id,
+                                              @org.springframework.web.bind.annotation.RequestParam(required = false) String deletedBy) {
+        boolean ok = service.deleteProduct(id, deletedBy);
         if (!ok) return ResponseEntity.notFound().build();
         return ResponseEntity.noContent().build();
     }
